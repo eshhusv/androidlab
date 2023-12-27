@@ -1,17 +1,14 @@
-package com.example.myapplication
-
+import com.example.myapplication.MainActivity
+import org.junit.Assert.*
+import org.junit.Rule
 import org.junit.Test
 
-import org.junit.Assert.*
-
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun testExitButton() {
+        val ma = MainActivity()
+        ma.editText.setText("ruslan varfolomeevich")
+        ma.reverse.performClick()
+        assertEquals("hciveemolofrav nalsur", ma.editText.text)
     }
 }

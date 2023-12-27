@@ -5,18 +5,22 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.widget.Button
 import android.widget.EditText
+import android.widget.Button
+import android.widget.RadioGroup
+import android.widget.TextView
+import android.widget.CheckBox
+import android.widget.RadioButton
+import android.os.PersistableBundle
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var editText:EditText
-    private lateinit var reverse:Button
-    private lateinit var about:Button
-    private lateinit var exit:Button
-    private val RESULT_ACTIVITY_REQUEST_CODE = 123
-    private val PREFS_NAME = "MyPrefsFile"
-    private val KEY_TEXT = "textKey"
+    public lateinit var editText:EditText
+    public lateinit var reverse:Button
+    public lateinit var about:Button
+    public lateinit var exit:Button
+    public val RESULT_ACTIVITY_REQUEST_CODE = 123
+    public val PREFS_NAME = "MyPrefsFile"
+    public val KEY_TEXT = "textKey"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
